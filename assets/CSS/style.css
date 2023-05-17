@@ -1,0 +1,220 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+h1, h2, h3, p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+}
+/********/
+#header {
+    width: 100%;
+	height: 100px;
+	position: fixed;
+    left: 0;
+    top: 0;
+    transition: all .2s ease;
+}
+#header.scrolled {
+    background: rgba(255,255,255,7);
+    backdrop-filter: blur(5px);
+    height: 60px;
+}
+#header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.eng {
+    font-family: 'Tourney', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    float: left;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.navigator {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    float: left;
+    margin-top: 0px;
+    margin-left: 22px;
+
+}
+.nav-links {
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    color: #000;
+    list-style: none;
+    
+}
+.nav-link {   
+    margin-right: 10px;
+}
+.nav-link:last-of-type {
+    margin-right: 0;
+}
+.link {
+    text-decoration: none;
+    font-family: 'Staatliches', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #000;
+}
+.logo {
+    float: right;
+    width: 238px;
+    height: 54px;
+    margin-top: 2px;
+    margin-right: 120px;
+}
+/***********/
+#main {
+    width: 100%;
+	height: 100%;
+	position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .2s ease;
+   
+}
+#main.scrolled {
+    background: url(assets/imagers/bg-picture.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.section {
+    width: 785px;
+    margin-top: 70px;
+    margin-left: 450px;
+    margin-right: 120px;
+    padding-bottom: 0px;
+
+
+}
+h2 {
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 40px;
+}
+.sup {
+    font-family: 'Farro', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.paragraph {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.itallic {
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.section2 {
+    width: 785px;
+    margin-top: 60px;
+    margin-left: 450px;
+    margin-right: 120px;
+    padding-bottom: 0px;
+}
+.bg {
+    position: absolute;
+    margin-bottom: 8px;
+    background: #DADADA
+    
+}
+.bl {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+/*************/
+.sidebar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: min(30%, 385px);
+    margin: 0 auto;
+
+}
+.nav-side {
+    height: 100%;
+    width: 385px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 70px;
+    margin-left: 120px;
+}
+.side-links {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.side-link {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 10px;
+    gap: 10px;
+    border-bottom: 1px solid #BDBDBD;
+}
+.link-side {
+    font-family: 'Francois One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px; 
+    letter-spacing: 0.04em;
+    text-transform: uppercase;   
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+
+
+
